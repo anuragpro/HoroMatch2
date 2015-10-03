@@ -197,8 +197,8 @@ You may like to have a paid professional Horoscope Matching and Analysis as next
     <h3>Contact us:</h3>
 
 
-Mail to:  <a href="mailto:matchcharts@gmail.com?subject=Horoscope Matching&body=Birth  Details">Astraura</a><br />
-matchcharts@gmail.com
+Mail to:  <a rel="external" href="mailto:matchcharts@gmail.com?subject=Horoscope Matching&body=Birth  Details">Astraura</a><br />
+<a rel="external" href="mailto:matchcharts@gmail.com">matchcharts@gmail.com</a>
 
 </div>
 
@@ -1067,8 +1067,8 @@ Remark = "Both Aroha of different Rajju are OK";
 }
 if (Left(BRajju, 7) == "Avaroha" && Left(GRajju, 7) == "Avaroha" &&
    Right(BRajju, BRajju.length - 7) != Right(GRajju, GRajju.length - 7)) {
-Rajju = "Not OK";
-Remark = "Both Avaroha of different Rajjus not acceptble";
+Rajju = "Exception";
+Remark = "Both Avaroha of different Rajjus. Some do not prefer.";
 }
 if (libval==2){
 if (BRajju != GRajju){
@@ -1416,7 +1416,11 @@ mtab.rows[0].cells[0].innerHTML= "Star";
 mtab.rows[0].cells[1].innerHTML= "Result";
 var rn=1;
 for (var i=1;i<=27;i++){
-if (ResultSet[i-1]!=""){
+mtab.rows[rn].cells[0].innerHTML= "";
+mtab.rows[rn].cells[1].innerHTML= "";
+}
+for (var i=1;i<=27;i++){
+if ([i-1]!=""){
 mtab.rows[rn].cells[0].innerHTML= ResultSet[i-1];
 mtab.rows[rn].cells[1].innerHTML= PadaSet[i-1];
 rn++;}
