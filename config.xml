@@ -8,5 +8,8 @@ xmlns:cdv="http://cordova.apache.org/ns/1.0">
 Astaura
 </author>
 
-<gap:plugin name="org.apache.cordova.inappbrowser" />
+<feature name="InAppBrowser">
+      <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+  </feature>
+
 </widget>
