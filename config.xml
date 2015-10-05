@@ -9,9 +9,10 @@ Astaura
 </author>
 <content src="index.html" />
 <!-- This now applies only to HTTP and HTTPS on Android -->
-<access origin="*" />
+<access origin="*" browserOnly="true" />
 <!-- These are needed in Cordova 3.6 and newer for Android -->
 <access origin="mailto:*" launch-external="yes"/>
 <access origin="tel:*" launch-external="yes"/>
-<plugin name="InAppBrowser" value="org.apache.cordova.InAppBrowser" />
+<gap:plugin name="org.apache.cordova.inappbrowser" />
+<gap:plugin name="org.apache.corva.geolocation" />
 </widget>
