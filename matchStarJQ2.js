@@ -49,8 +49,3 @@ function getIndex(node) {
   }
   return i;
 }
-//define tab or click event type on rool level (can be combined with modernizr)
-iaEvent = "click";
-if (typeof navigator !== "undefined" && navigator.app) {
-   iaEvent = "tap";
-}
