@@ -54,3 +54,5 @@ function getIndex(node) {
   }
   return i;
 }
+
+function openBrowser(externalLinkToOpen){window.open(externalLinkToOpen,_system,'location=no');}
