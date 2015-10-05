@@ -1,4 +1,9 @@
 // JavaScript Document
+$( document ).bind( "mobileinit", function() {
+    // Make your jQuery Mobile framework configuration changes here!
+
+    $.mobile.allowCrossDomainPages = true;
+});
 $(document).ready(function () {
         $('li').click(function () {
 
