@@ -49,9 +49,18 @@ function getIndex(node) {
   }
   return i;
 }
-$(document).on('click','a',function(e) {
-    if ($(this).attr('target') === '_blank') {
-        window.open($(this).attr('href'),'_system','location=no');
-        e.preventDefault();
+//define tab or click event type on rool level (can be combined with modernizr)
+iaEvent = "click";
+if (typeof navigator !== "undefined" && navigator.app) {
+   iaEvent = "tap";
+}
+$('.ext-link').each.bind(iaEvent, function() {
+    if (typeof navigator !== "undefined" && navigator.app) {
+        // Mobile device.
+        var linktarget = this.attr("href");
+        navigator.app.loadUrl(linktarget, {openExternal: true});
+    } else {
+        // Possible web browser
+        window.open(linktarget, "_blank");
     }
 });
