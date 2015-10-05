@@ -7,9 +7,6 @@ xmlns:cdv="http://cordova.apache.org/ns/1.0">
 <author email="matchcharts@gmail.com" href="http://www.astraura.org">
 Astaura
 </author>
-<feature name="InAppBrowser">
-      <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
-  </feature>
 
 
 
