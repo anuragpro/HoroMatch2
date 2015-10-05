@@ -1,4 +1,9 @@
 // JavaScript Document
+$( document ).bind( "mobileinit", function() {
+    // Make your jQuery Mobile framework configuration changes here!
+
+    $.mobile.allowCrossDomainPages = true;
+});
 $(document).ready(function () {
         $('li').click(function () {
 
@@ -49,3 +54,5 @@ function getIndex(node) {
   }
   return i;
 }
+
+function openBrowser(externalLinkToOpen){window.open(externalLinkToOpen,'_system','location=no');}
