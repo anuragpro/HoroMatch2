@@ -11,7 +11,9 @@ Astaura
 <!-- This now applies only to HTTP and HTTPS on Android -->
 <access origin="*" />
 <!-- These are needed in Cordova 3.6 and newer for Android -->
-<access origin="mailto:*" launch-external="yes"/>
-<access origin="tel:*" launch-external="yes"/>
+<access origin="http://*/*" />   
+<access origin="https://*/*" />  
+<access origin="mailto:*" />
+<access origin="tel:*"/>
 <plugin name="InAppBrowser" value="org.apache.cordova.InAppBrowser" />
 </widget>
