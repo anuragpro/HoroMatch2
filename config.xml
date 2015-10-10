@@ -23,7 +23,7 @@
   <gap:plugin name="org.apache.cordova.inappbrowser"/>
   <gap:plugin name="org.apache.cordova.media"/>
 
-  <access origin="*"/>
+  <access origin="*" browserOnly="true"/>
  
   <plugin name="cordova-plugin-whitelist" version="1"/>
   <allow-intent href="http://*/*"/>
